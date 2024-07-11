@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import dynamic from "next/dynamic";
+import Socials from "../components/Socials";
 
 export default function Invitation() {
   const Map = useMemo(
@@ -22,8 +23,9 @@ export default function Invitation() {
           </h3>
         </div>
         <div className="flex justify-evenly text-yellow-500">
-          <div className="flex justify-center w-2/5">
+          <div className="flex flex-col items-center w-2/5">
             <img src="#" alt="stoop sale" />
+            <Socials />
           </div>
 
           <div className="flex flex-col justify-evenly w-2/5 h-full">
