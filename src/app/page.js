@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="h-screen flex flex-col justify-center items-center">
-      <h1>You're Invited!</h1>
+      <h1>You&apos;re Invited!</h1>
       {/* change to Image tag */}
       <img
         className="h-4/5"
@@ -13,7 +13,9 @@ export default function Home() {
         alt="messenger pigeon"
       />
       {/* Link */}
-      <Link href="/invitation" className="border-2 rounded-lg p-2">Open Your Invitation</Link>
+      <Link href="/invitation" className="border-2 rounded-lg p-2">
+        Open Your Invitation
+      </Link>
     </main>
   );
 }
