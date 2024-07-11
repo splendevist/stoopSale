@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -9,7 +9,12 @@ export default function MyMap(props) {
   const { position, zoom } = props;
 
   return (
-    <MapContainer center={position} zoom={zoom} scrollWheelZoom={false} style={{ height: '400px', width: '50%' }}>
+    <MapContainer
+      center={position}
+      zoom={zoom}
+      scrollWheelZoom={false}
+      style={{ height: "250px", width: "50%" }}
+    >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
