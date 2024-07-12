@@ -94,7 +94,7 @@ export default function Home() {
           </p>
         </div>
         <Map position={[40.67951, -73.997283]} zoom={16} />
-        <p>///certified.sweat.wiser</p>
+        <p>w3w certified.sweat.wiser</p>
         <Link
           href="#share"
           className="border-black bg-white border-2 rounded-lg p-2"
