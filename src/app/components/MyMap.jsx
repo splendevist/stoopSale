@@ -13,7 +13,7 @@ export default function MyMap(props) {
       center={position}
       zoom={zoom}
       scrollWheelZoom={false}
-      style={{ height: "250px", width: "80%" }}
+      style={{ height: "250px", width: "100%" }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -21,7 +21,9 @@ export default function MyMap(props) {
       />
       <Marker position={position}>
         <Popup>
-          Stoop sale! <br /> Corner of court and 2nd.
+          Brooklyn Stoop Sale! <br /> Corner of court street
+          <br />
+          and 2nd Pl.
         </Popup>
       </Marker>
     </MapContainer>

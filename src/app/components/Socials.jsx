@@ -9,14 +9,15 @@ import Image from "next/image";
 
 export default function Socials() {
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full md:flex-row md:justify-evenly">
       <div className="mx-2">
         <FacebookShareButton
-          url={"https://github.com/next-share"}
+          url={"brooklyn-stoop-sale.vercel.app"}
           quote={"Check out this Brooklyn Stoop Sale on August 10th!"}
           hashtag={"#stoopsale"}
         >
           <Image
+            id="rotate"
             src="/facebook.png"
             alt="Facebook share button"
             height={150}
@@ -29,21 +30,28 @@ export default function Socials() {
 
       <div className="mx-2">
         <TwitterShareButton
-          url={"https://github.com/next-share"}
+          url={"brooklyn-stoop-sale.vercel.app"}
           title={"Check out this Brooklyn Stoop Sale on August 10th!"}
         >
-          <Image src="/x.png" alt="X share button" height={150} width={150} />
+          <Image
+            id="rotate"
+            src="/x.png"
+            alt="X share button"
+            height={150}
+            width={150}
+          />
         </TwitterShareButton>
         <p className="text-center">X</p>
       </div>
 
       <div className="mx-2">
         <WhatsappShareButton
-          url={"https://github.com/next-share"}
+          url={"brooklyn-stoop-sale.vercel.app"}
           title={"Check out this Brooklyn Stoop Sale on August 10th!"}
           separator=":: "
         >
           <Image
+            id="rotate"
             src="/whatsapp.png"
             alt="Whatsapp share button"
             height={150}
