@@ -4,12 +4,12 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
 } from "next-share";
-
 import Image from "next/image";
 
 export default function Socials() {
   return (
     <div className="flex flex-col items-center w-full md:flex-row md:justify-evenly md:mb-14">
+      {/* Facebook */}
       <div className="flex flex-col items-center mx-2">
         <FacebookShareButton
           url={"brooklyn-stoop-sale.vercel.app"}
@@ -29,6 +29,7 @@ export default function Socials() {
         </p>
       </div>
 
+      {/* Twitter */}
       <div className="flex flex-col items-center mx-2">
         <TwitterShareButton
           url={"brooklyn-stoop-sale.vercel.app"}
@@ -47,6 +48,7 @@ export default function Socials() {
         </p>
       </div>
 
+      {/* Whatsapp */}
       <div className="flex flex-col items-center mx-2">
         <WhatsappShareButton
           url={"brooklyn-stoop-sale.vercel.app"}
