@@ -2,11 +2,13 @@ import Link from "next/link";
 
 export default function Button({ title, anchor }) {
   return (
-    <Link
-      href={anchor}
-      className="bg-white rounded-lg py-2 px-10 hover:bg-indigo-500 hover:text-white active:bg-white active:text-black"
+    <div
+      id="zoom-button"
+      className="bg-[url('/button-tape.png')] text-center text-white h-10 w-52 bg-cover bg-no-repeat flex justify-center items-center"
     >
-      {title}
-    </Link>
+      <Link href={anchor} className="w-full flex justify-center items-center">
+        {title}
+      </Link>
+    </div>
   );
 }

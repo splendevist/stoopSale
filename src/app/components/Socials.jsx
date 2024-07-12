@@ -9,8 +9,8 @@ import Image from "next/image";
 
 export default function Socials() {
   return (
-    <div className="flex flex-col items-center w-full md:flex-row md:justify-evenly">
-      <div className="mx-2">
+    <div className="flex flex-col items-center w-full md:flex-row md:justify-evenly md:mb-14">
+      <div className="flex flex-col items-center mx-2">
         <FacebookShareButton
           url={"brooklyn-stoop-sale.vercel.app"}
           quote={"Check out this Brooklyn Stoop Sale on August 10th!"}
@@ -23,12 +23,13 @@ export default function Socials() {
             height={150}
             width={150}
           />
-          {/* <FacebookIcon size={32} round /> */}
         </FacebookShareButton>
-        <p className="text-center">Facebook</p>
+        <p className="bg-[url('/button-tape.png')] text-center text-white h-10 w-52 bg-cover bg-no-repeat flex justify-center items-center">
+          Facebook
+        </p>
       </div>
 
-      <div className="mx-2">
+      <div className="flex flex-col items-center mx-2">
         <TwitterShareButton
           url={"brooklyn-stoop-sale.vercel.app"}
           title={"Check out this Brooklyn Stoop Sale on August 10th!"}
@@ -41,10 +42,12 @@ export default function Socials() {
             width={150}
           />
         </TwitterShareButton>
-        <p className="text-center">X</p>
+        <p className="bg-[url('/button-tape.png')] text-center text-white h-10 w-52 bg-cover bg-no-repeat flex justify-center items-center">
+          X
+        </p>
       </div>
 
-      <div className="mx-2">
+      <div className="flex flex-col items-center mx-2">
         <WhatsappShareButton
           url={"brooklyn-stoop-sale.vercel.app"}
           title={"Check out this Brooklyn Stoop Sale on August 10th!"}
@@ -58,7 +61,9 @@ export default function Socials() {
             width={150}
           />
         </WhatsappShareButton>
-        <p className="text-center">Whatsapp</p>
+        <p className="bg-[url('/button-tape.png')] text-center text-white h-10 w-52 bg-cover bg-no-repeat flex justify-center items-center">
+          Whatsapp
+        </p>
       </div>
     </div>
   );

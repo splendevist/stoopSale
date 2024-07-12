@@ -6,7 +6,7 @@ export default function Location() {
   const Map = useMemo(
     () =>
       dynamic(() => import("@/app/components/MyMap.jsx"), {
-        loading: () => <p>A map is loading</p>,
+        loading: () => <p>Map Loading...</p>,
         ssr: false,
       }),
     []
@@ -14,21 +14,19 @@ export default function Location() {
   return (
     <div
       id="location"
-      className="flex flex-col justify-evenly h-screen bg-yellow-200"
+      className="flex flex-col justify-evenly h-screen bg-sea text-white"
     >
       <div className="flex justify-center">
-        <h2 className="text-3xl text-indigo-500 w-3/4 text-center py-2">
-          Location
-        </h2>
+        <h2 className="text-3xl w-3/4 text-center py-2">Location</h2>
       </div>
       <div className="flex flex-col items-center justify-evenly md:flex-row">
         <div className="md:flex md:flex-col">
           <div>
             <p className="text-2xl">WHERE?</p>
             <p>
-              Corner of court street and 2nd pl., <br />
-              Brooklyn, <br />
-              NY.
+              Corner of court street and 2nd pl. <br />
+              Brooklyn <br />
+              New York
             </p>
           </div>
           <div className="my-4">
@@ -36,12 +34,12 @@ export default function Location() {
             <p>
               Sat August 10th
               <br />
-              11-4
+              11am - 4pm
             </p>
           </div>
         </div>
         <div className="w-3/4 flex flex-col items-center md:w-1/3">
-          <Map position={[40.67951, -73.997283]} zoom={16} />
+          <Map position={[40.67951, -73.997283]} zoom={15} />
           <p className="pt-4">w3w certified.sweat.wiser</p>
         </div>
       </div>

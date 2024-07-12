@@ -7,10 +7,10 @@ export default function About() {
       id="stoop_sale"
       className="flex flex-col justify-evenly h-screen bg-yellow-50"
     >
-      <h2 className="text-3xl text-center py-2 text-indigo-500">
+      <h2 className="text-3xl text-center py-2 text-gold">
         brooklyn stoop sale
       </h2>
-      <h3 className="text-2xl text-center text-indigo-500">
+      <h3 className="text-2xl text-center text-gold">
         Where one person&apos;s trash is another person&apos;s treasure
       </h3>
       <div className="grid grid-cols-2 justify-items-center items-center md:flex md:justify-evenly">

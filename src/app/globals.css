@@ -16,6 +16,18 @@ html {
   transform: scale(1.5);
 }
 
+#zoom-button {
+  transition: transform 0.2s;
+}
+
+#zoom-button:hover {
+  transform: scale(1.1);
+}
+
+#zoom-button:active {
+  transform: scale(1);
+}
+
 #zoom-out {
   transition: transform 0.2s;
 }

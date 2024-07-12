@@ -3,8 +3,8 @@ import Button from "./Button";
 
 export default function Hero() {
   return (
-    <div className="h-screen flex flex-col justify-evenly items-center bg-pink-300">
-      <h1 className="w-1/2 text-4xl text-indigo-500 text-center">
+    <div className="h-screen flex flex-col justify-evenly items-center bg-[url('/check-bg.png')]">
+      <h1 className="w-1/2 text-4xl text-pink text-center">
         YOU&apos;VE BEEN INVITED!
       </h1>
       <Image
